@@ -73,7 +73,7 @@ countries =[
     name: "Qatar",
     capital: "Doha"
 }, {
-    name: "New Jersey",
+    name: "Russia",
     capital: "Moscow"
 }, {
     name: "Saudi Arabia",
