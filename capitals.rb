@@ -100,3 +100,35 @@ countries =[
     name: "United States",
     capital: "Washington D.C."
 }]
+
+run = true
+
+while run 
+    score = 0 
+    num = 0 
+for country in countries do
+    puts "what is the capital of " + country[:name]
+    ans = gets.chomp
+    if ans.upcase == country[:capital].upcase
+        puts "You are right the capital of #{country[:name]} is #{country[:capital]}"
+        score += 1 
+    else 
+        puts "NO  the capital of #{country[:name]} is #{country[:capital]}"
+
+    end
+
+
+end 
+puts "you answered #{score} out of #{countries.length} questions "
+puts "do you want to play (Y/N)"
+valdiation = gets.chomp 
+if valdiation.upcase == 'N' || valdiation.upcase == 'NO'
+run = false 
+
+elsif valdiation.upcase == 'Y' || valdiation.upcase == 'YES'
+    run = true
+ 
+    else 
+     run= false
+end
+end 
